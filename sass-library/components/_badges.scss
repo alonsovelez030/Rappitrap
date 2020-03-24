@@ -1,0 +1,10 @@
+.rtp-span{
+    font-family: 'Proxima Nova Alt Regular';
+    font-size: 13px;
+    padding: 6px;
+    color: $white;
+    border-radius: 2px;
+    &.span-success{ background-color: $success;}
+    &.span-error{ background-color: $danger;}
+    &.span-pending{ background-color: $secondary;}
+}

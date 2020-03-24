@@ -8,9 +8,8 @@ input[type=datetime]:not(.browser-default),
 input[type=datetime-local]:not(.browser-default), 
 input[type=tel]:not(.browser-default), 
 input[type=number]:not(.browser-default), 
-input[type=search]:not(.browser-default), 
-textarea.materialize-textarea,
-.bof-input {
+input[type=search]:not(.browser-default),
+.rtp-input {
     background-color: $light-gray;
     border: 1px solid $light-gray;
     border-radius: 2px;
@@ -20,24 +19,9 @@ textarea.materialize-textarea,
     font-family: 'Proxima Nova Alt Regular';
     
     &::placeholder{
-        color: $gray;
+        color: $secondary;
     }
     &:valid{
         background-color: $white;
-    }
-}
-
-#search-content{
-    input{
-        display: block;
-        padding: 0px 10px;
-        border: 1px solid #0984ff00;
-        background-color: #f7f7f7;
-        font-size: 14px;
-        color: #333333;
-        height: 40px;
-        border-radius: 8px 0 0 8px;
-        box-sizing: unset;
-        margin: 0;
     }
 }

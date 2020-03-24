@@ -1,29 +1,26 @@
-.bof-btn {
+@import '../abstracts/mixins';
+
+.rtp-btn {
     padding: 5px;
-    background-color: $light-green;
-    color: $white;
     border: 0px;
     border-radius: 2px;
+    color: $white;
+    background-color: $purple-2;
     font-family: 'Proxima Nova Alt Regular';
 
-    &.bof-p-outline {
-        border: 1px solid $light-green;
-        background-color: $white;
-        color: $light-green;
-    }
-    &.bof-btn-primary {
-        background-color: $cr-rappi;
-    }
-    &.bof-p-outline:hover { opacity: 1; }
+    &.btn-primary { @include btn-fill($white, $primary); }
+    &.btn-secondary { @include btn-fill($white, $secondary); }
+    &.btn-success { @include btn-fill($white, $success); }
+    &.btn-danger { @include btn-fill($white, $danger); }
 
-    &:hover{
-        opacity: 0.5;
-        transition: .1s all linear;
+    &.btn-outline {
+        &-primary{ @include btn-outline($primary); }
+        &-secondary{ @include btn-outline($secondary); }
+        &-success{ @include btn-outline($success); }
+        &-danger{ @include btn-outline($danger); }
     }
-    &:disabled{
-        opacity: 1;
-        background-color: $gray;
-    }
+
+    &:disabled{ opacity: 0.5; }
 }
 
-.bof-btn-block{ width: 100%; @extend .bof-btn; }
+.rtp-btn-block{ width: 100%; @extend .rtp-btn; }
