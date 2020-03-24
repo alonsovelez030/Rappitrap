@@ -1,7 +1,8 @@
-h1{
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
+.title{
     font-size: 25px;
     color: #6186ff;
-    font-family: 'Proxima Nova Alt Bold'
 }
 hr{
     border: 1px solid #e6ebf1;
@@ -14,10 +15,10 @@ hr{
     height: 20px;
     padding: 2px;
 }
-.bof-input{
+.rtp-input{
     max-width: 114px;
 }
 
-.bof-modal{
+.rtp-modal{
     display: none;
 }
