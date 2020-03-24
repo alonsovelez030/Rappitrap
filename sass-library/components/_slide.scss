@@ -1,4 +1,4 @@
-.bof-slide-toggle {
+.rtp-slide-toggle {
     width: 168px;
     height: 36px;
     border-radius: 18px;
@@ -10,15 +10,15 @@
     font-family: 'Proxima Nova Alt Regular'
 }
 
-.bof-slide-toggle:hover { border-color: #d5d5d5; }
+.rtp-slide-toggle:hover { border-color: #d5d5d5; }
 
-.bof-slide-toggle input.input-switch {
+.rtp-slide-toggle input.input-switch {
     position: absolute;
     opacity: 0;
     z-index: -10;
 }
 
-.bof-slide-toggle span.switch-bg {
+.rtp-slide-toggle span.switch-bg {
     position: absolute;
     z-index: 0;
     left: 50%;
@@ -31,14 +31,14 @@
     top: 3px;
 }
 
-.bof-slide-toggle span.switch-labels {
+.rtp-slide-toggle span.switch-labels {
     position: absolute;
     z-index: 1;
     width: inherit;
     height: inherit;
 }
 
-.bof-slide-toggle span.switch-labels:before, .bof-slide-toggle span.switch-labels:after {
+.rtp-slide-toggle span.switch-labels:before, .rtp-slide-toggle span.switch-labels:after {
     height: 40px;
     width: 50%;
     line-height: 36px;
@@ -47,21 +47,21 @@
     text-align: center;
 }
 
-.bof-slide-toggle span.switch-labels:before {
+.rtp-slide-toggle span.switch-labels:before {
     content: attr(data-on);
     left: 0;
     position: absolute;
     color: $light-black;
 }
 
-.bof-slide-toggle span.switch-labels:after {
+.rtp-slide-toggle span.switch-labels:after {
     content: attr(data-off);
     position: absolute;
     right: 7px;
     color: #fff;
 }
 
-.bof-slide-toggle label {
+.rtp-slide-toggle label {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,11 +72,11 @@
     cursor: pointer;
 }
 
-.bof-slide-toggle .input-switch:checked ~ .switch-bg {
+.rtp-slide-toggle .input-switch:checked ~ .switch-bg {
     left: 4px;
     background-color: #00ddcd;
 }
-.bof-slide-toggle .input-switch:checked ~ .switch-labels:before { color: #fff; }
-.bof-slide-toggle .input-switch:checked ~ .switch-labels:after { color: $light-black; }
+.rtp-slide-toggle .input-switch:checked ~ .switch-labels:before { color: #fff; }
+.rtp-slide-toggle .input-switch:checked ~ .switch-labels:after { color: $light-black; }
   
   

@@ -1,9 +1,29 @@
 @mixin font-guide($font-size,$color,$strench){
     font-size: $font-size;
-	  font-weight: $strench;
+	font-weight: $strench;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
     color:$color;
+}
+
+@mixin btn-fill($color, $bg) {
+    color: $color;
+    background-color: $bg;
+    &:hover{
+        opacity: 0.5;
+        transition: .1s all linear;
+    }
+}
+
+@mixin btn-outline($color) {
+    background-color: $white;
+    border: 1px solid $color;
+    color: $color;
+    &:hover{
+        color: $white;
+        background-color: $color;
+        transition: .1s all linear;
+    }
 }

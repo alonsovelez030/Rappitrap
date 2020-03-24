@@ -1,11 +1,11 @@
-.bof-tooltip{
+.rtp-tooltip{
     position: relative;
     span {
       padding: 8px 15px;
       display: inline-block;
       position: relative;
       border-radius: 3px;
-      background-color: $purple;
+      background-color: $primary;
       color: $white;
       font-family: 'Proxima Nova Alt Bold';
       font-size: 13px;
@@ -50,8 +50,11 @@
       .btn-group{
         display: flex;
         justify-content: flex-end;
-        .bof-btn-primary{width: 70px;}
-        .bof-p-outline{width: 50px;}
+        .rtp-btn-primary{
+          width: auto;
+          padding: 0 30px;
+        }
+        .rtp-p-outline{width: 50px;}
       }
     }
   }
